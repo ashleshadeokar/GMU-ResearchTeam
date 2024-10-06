@@ -55,9 +55,10 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <div class="navbar-nav mx-0 mx-lg-auto">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <!-- <a href="index.html" class="nav-item nav-link">Home</a> -->
                             <a href="#about-section" class="nav-item nav-link">About</a>
                             <a href="#our-team" class="nav-item nav-link">Our Team</a>
+                            <a href="#news" class="nav-item nav-link">News & Publications</a>
                             <a href="#contact-us" class="nav-item nav-link">Contact Us</a>
                         </div>
                     </div>
@@ -113,23 +114,6 @@
         </div>
         <!-- About Section End -->
 
-        <!-- News and Updates Section Start -->
-        <div class="news-section">
-            <div class="container">
-                <h2 class="section-title">News and Updates</h2>
-                <p class="section-subtitle">Stay informed with the latest updates from our research team, including insights, conference talks, and notable achievements.</p>
-                <p class="mb-5 fs-5">Read about our latest insights, conference talks, and the achievements of our research team.</p>
-                <!-- Image goes here -->
-                <div class="news-image">
-                    <img src="path_to_your_image.jpg" alt="News Updates" style="width: 100%; height: auto;">
-                </div>
-                <div class="buttons-container">
-                    <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#">Recent Achievements</a>
-                </div>
-            </div>
-        </div>
-        <!-- News and Updates Section end -->
-
         <!-- Modal Search Start -->
         <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
@@ -151,40 +135,235 @@
 
 
         <!-- Team Start -->
+        
         <div id="our-team" class="container-fluid team py-5">
             <div class="container py-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary">Our Team</h4>
+                    <!-- <h4 class="text-primary">Our Team</h4> -->
                     <h1 class="display-4 mb-4">Meet Our Researchers</h1>
                     <p class="mb-0">Our team is composed of researchers, professors, and students, all working together to push the boundaries of knowledge and innovation.</p>
                 </p>
                 </div>
-                <!-- Button to link to team members page -->
-                <div class="text-center mb-5">
-                    <a href="team.html" class="btn btn-primary rounded-pill py-3 px-5">Know Our Team Members</a>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="team-item" onclick="location.href='portfolio/edward.html';" style="cursor: pointer;">
+                            <div class="team-img">
+                                <img src="img/ed.png" class="img-fluid team-member-photo rounded-top" alt="Dr Edward Oughton">
+                                <div class="team-icon">
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href=""><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-title p-4">
+                                <h4 class="mb-0">Dr Edward Oughton</h4>
+                                <p class="mb-0">Assistant Professor</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/dennies.jpeg" class="img-fluid team-member-photo rounded-top" alt="Dennies Bor">
+                                    <div class="team-icon">
+                                        <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href="https://www.linkedin.com/in/denniesbor/"><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href="mailto:dbor@gmu.edu"><i class="fa-solid fa-envelope"></i></a>
+                                        <!-- Assuming GitHub link is not available -->
+                                    </div>
+                                </div>
+                                <div class="team-title p-4">
+                                    <h4 class="mb-0">Dennies Bor</h4>
+                                    <p class="mb-0">Graduate Research Assistant</p>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/jim1.jpg" class="img-fluid team-member-photo rounded-top" alt="James Gallagher">
+                                    <div class="team-icon">
+                                        <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href=""><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                                <div class="team-title p-4">
+                                    <h4 class="mb-0">James Gallagher</h4>
+                                    <p class="mb-0">Graduate Research Assistant</p>
+                                </div>
+                            </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/lucy.jpeg" class="img-fluid team-member-photo rounded-top" alt="Lucy Wilkerson">
+                                    <div class="team-icon">
+                                        <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href="https://www.linkedin.com/in/lucy-wilkerson-640567176/"><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href="mailto:lwilker@gmu.edu"><i class="fa-solid fa-envelope"></i></a>
+                                        <!-- Assuming GitHub link is not available -->
+                                    </div>
+                                </div>
+                                <div class="team-title p-4">
+                                    <h4 class="mb-0">Lucy Wilkerson</h4>
+                                    <p class="mb-0">Graduate Research Assistant</p>
+                                </div>
+                            </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/mandar.jpg" class="img-fluid team-member-photo rounded-top" alt="Mandar Chaudhari">
+                                    <div class="team-icon">
+                                        <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href="https://www.linkedin.com/in/mandar-chaudhari-7a219a200/"><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href=""><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                                <div class="team-title p-4">
+                                    <h4 class="mb-0">Mandar Chaudhari</h4>
+                                    <p class="mb-0">Research Assistant</p>
+                                </div>
+                            </div>
+                    </div>
+
+                    
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/ash.png" class="img-fluid team-member-photo rounded-top" alt="Ashlesha Deokar">
+                                    <div class="team-icon">
+                                        <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href="https://www.linkedin.com/in/ashlesha-deokar-63401a188/"><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href=""><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                                <div class="team-title p-4">
+                                    <h4 class="mb-0">Ashlesha Deokar</h4>
+                                    <p class="mb-0">Research Assistant</p>
+                                </div>
+                            </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/noah.jpeg" class="img-fluid team-member-photo rounded-top" alt="Noah Rivera">
+                                    <div class="team-icon">
+                                        <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href="https://www.linkedin.com/in/noahrivera/"><i the="fab fa-linkedin-in"></i></a>
+                                        <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href="mailto:nriver3@gmu.edu"><i class="fa-solid fa-envelope"></i></a>
+                                        <!-- Assuming GitHub link is not available -->
+                                    </div>
+                                </div>
+                                <div class="team-title p-4">
+                                    <h4 the="mb-0">Noah Rivera</h4>
+                                    <p class="mb-0">Research Technician</p>
+                                </div>
+                            </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/grace.jpeg" class="img-fluid team-member-photo rounded-top" alt="Grace Im">
+                                    <div class="team-icon">
+                                        <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href="https://www.linkedin.com/in/grace-im-293095241/"><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href="mailto:graceim@gmu.edu"><i class="fa-solid fa-envelope"></i></a>
+                                        <!-- Assuming GitHub link is not available -->
+                                    </div>
+                                </div>
+                                <div class="team-title p-4">
+                                    <h4 class="mb-0">Grace Im</h4>
+                                    <p class="mb-0">Undergraduate Research Fellow</p>
+                                </div>
+                            </div>
+                    </div> 
+
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/team-4.jpg" class="img-fluid team-member-photo rounded-top" alt="Aryav">
+                                    <div class="team-icon">
+                                        <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href=""><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                                <div class="team-title p-4">
+                                    <h4 class="mb-0">Aryav</h4>
+                                    <p class="mb-0">Profession</p>
+                                </div>
+                            </div>
+                    </div>
+                    
                 </div>
-                
             </div>
         </div>
+        <!-- Team End -->
+            
+        <!-- News Start -->
+        <div id="news" class="container-fluid news py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h1 class="display-4 mb-4">News & Publications</h1>
+                    <p class="mb-0">Stay informed with the latest updates from our research team, including insights, conference talks, and notable achievements.</p>
+
+                </div>  
+
+                <p class="mb-5 fs-5">Read about our latest insights, conference talks, and the achievements of our research team.</p>
+                <!-- Image goes here -->
+                <div class="news-image">
+                    <img src="path_to_your_image.jpg" alt="News Updates" style="width: 100%; height: auto;">
+                </div>
+            </div>
+        </div>
+
+        <!-- News End -->
+
 
         <!-- Footer Start -->
         <div id="contact-us" class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
             <div class="container py-5">
                 <div class="row g-5">
                     <div class="col-md-6">
-                        <h3 class="text-white mb-4">About GMU Research</h3>
-                        <p class="text-white mb-4">At George Mason University, we are committed to driving progress in science and technology. Our research team collaborates across disciplines to find solutions to today’s most complex challenges.</p>
-                        <div class="footer-btn d-flex">
-                            <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
                         <h3 class="text-white mb-4">Contact Us</h3>
-                        <p class="text-white mb-2">Email: research@gmu.edu</p>
-                        <p class="text-white mb-2">Phone: +1 (703) 993-1000</p>
+                        <p class="text-white mb-2">Email: eoughton@gmu.edu</p>
                         <p class="text-white">Address: 4400 University Drive, Fairfax, VA 22030</p>
+                    </div>
+                </div><br>
+                    <div class="row g-5" data-wow-delay="0.3s">
+                        <div>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-lg-12 col-xl-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control border-0" id="name" placeholder="Your Name">
+                                            <label for="name">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-xl-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control border-0" id="email" placeholder="Your Email">
+                                            <label for="email">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control border-0" id="subject" placeholder="Subject">
+                                            <label for="subject">Subject</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 120px"></textarea>
+                                            <label for="message">Message</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary w-100 py-3">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
